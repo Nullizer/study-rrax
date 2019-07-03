@@ -1,0 +1,13 @@
+server {
+    listen       8000; #生产环境下需要改
+    server_name  rrax.localhost; #生产环境下需要改
+
+    location / {
+        root public; #生产环境下需要改
+        index  index.html index.htm;
+    }
+
+    location /assets/ {
+        alias dist/;
+    }
+}

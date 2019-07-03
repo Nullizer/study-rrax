@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html, body {
+      height: 100%;
+      background-color: goldenrod;
+      position: relative;
+    }
+
+    #drag {
+      position: absolute;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      cursor: all-scroll;
+    }
+    #prag {
+      margin-top: 10em;
+      max-width: 50em;
+    }
+    #num {
+      display: inline-block;
+      min-width: 5em;
+    }
+  </style>
+</head>
+<body>
+  <label id="num"></label><button id="stop_btn">stop</button>
+  <div id="drag"></div>
+  <p id="prag"></p>
+  <script type="module" src="assets/main.js"></script>
+</body>
+</html>
